@@ -1,4 +1,15 @@
-def greeting():
-	print("Hello World")
+def greeting(name: str = "World") -> str:
+    """
+    Generate a greeting message.
 
-greeting()
+    Args:
+        name: The name to greet (default: "World")
+
+    Returns:
+        A greeting message string
+    """
+    return f"Hello {name}"
+
+
+if __name__ == "__main__":
+    print(greeting())
